@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+<style>
+body{
+    background:linear-gradient(38deg, rgba(2,0,36,1) 0%, rgba(255,0,254,1) 35%, rgba(0,212,255,1) 100%);
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.form{
+    width:340px;
+    height:650px;
+    background:aliceblue;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    position:relative;
+}
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;font-size:14px;
+    color:#5a5a5a
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+    border-radius:8px;
+    position: absolute;
+    margin-left: 31%;
+    
+}
+button:hover{
+    background:rgba(255,0,254,1);
+    color:#fff;
+    
+}
+.cont-sex{
+    display: flex;
+    position: absolute;
+    text-align: justify;
+    color: #50505a;
+    font-size: small;
+}
+.cont-check{
+    position: relative;
+    display: inline-block;
+    width: -10px;
+    color: #50505a;
+    font-size: 12px;
+    text-align: left;
+}
+.text-plob{
+    color: #50505a;
+    font-size: 14px;
+}
+
+.cont-info{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;right:-20px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+
+span{
+    margin:0 5px 0 15px
+}
+
+</style>
+  </head>
+  <body>
+    <form action="" method="get" class="form">
+        <h2>Formulario</h2>
+        <p type="Nombre:"><input maxlength="50" placeholder="Ingrese su Nombre"></input></p>
+        <p type="Apellidos:"><input maxlength="50" placeholder="Ingrese sus Apellidos"></input></p>
+        <p type="Sexo:"></p>
+            <div class="cont-sex">
+                <input type="radio" name="sexo" id="hombre">
+                <label for="hombre">Hombre</label>
+				<input type="radio" name="sexo" id="mujer">
+                <label for="mujer">Mujer</label>
+                
+            </div>
+            <br><br>
+            <div class="cont-check" >
+                <input type="checkbox" id="condiciones" name="Cd" >
+                <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normat&iacute;va sobre protección de datos</label><br>
+                <input checked="checked" type="checkbox" id="informacion" name="If" >
+                <label for="informacion">Deseo recibir informaci&oacute;n sobre novedades y ofertas</label><br>
+            </div>
+            <br><br><br>
+            <label class="text-plob" for="plob">Poblacion</label>
+            <select name="plobacion" id="plob">
+                <option value="orizaba">Orizaba</option>
+                <option value="cordoba">Cordoba</option>
+                <option value="xalapa">Xapala</option>
+                <option value="veracruz">Veracruz</option>
+            </select>
+            <br><br>
+        
+        <button >Enviar</button>
+        <div class="cont-info" >
+          <span ></span>001 1023 567
+          <span ></span> contact@gmail.com
+        </div>
+      </form>
+  </body>
+</html>
